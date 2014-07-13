@@ -9,7 +9,11 @@
 
 module.exports = (robot) ->
   robot.hear /ちょり/, (msg) ->
-    msg.send "ちょりちょり"
+    msg.send msg.random [
+        "ちょり",
+        "ちょりちょり",
+        "ちょりちょりちょり"
+    ]
 
   robot.respond /ADAPTER$/i, (msg) ->
     msg.send robot.adapterName
