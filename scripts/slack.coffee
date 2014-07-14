@@ -8,11 +8,9 @@
 #   hubot die - End hubot process
 
 module.exports = (robot) ->
-  robot.hear /ちょり/, (msg) ->
+  robot.hear /いつや/, (msg) ->
     msg.send msg.random [
-        "ちょり",
-        "ちょりちょり",
-        "ちょりちょりちょり"
+        "今でしょщ（ﾟдﾟщ）"
     ]
 
   robot.respond /ADAPTER$/i, (msg) ->
